@@ -5,7 +5,7 @@ minetest.register_privilege("no_knockback", {
 })
 
 minetest.register_on_punchplayer(function(player, _, _, tool, dir, damage)
-	if minetest.check_player_privs(player, {no_knockback = false}) and player:get_hp() > 0 then
+	if not minetest.check_player_privs(player, {no_knockback = true}) and player:get_hp() > 0 then
 		if dir.y <= 0 then
 			dir.y = -dir.y
 		end
