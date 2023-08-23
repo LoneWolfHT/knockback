@@ -1,2 +1,4 @@
 # Knockback
-Knockback mod I made mostly for fun
+
+Adds knockback for pre-5.1 Minetest clients via player teleportation.
+
